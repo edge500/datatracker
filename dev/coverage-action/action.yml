@@ -1,6 +1,6 @@
 name: 'Datatracker Coverage + Changelog Parser'
 description: 'Parse and generate coverage and changelog files for Datatracker releases'
-author: Nicolas Giard
+author: Nicolas Oresme 
 inputs:
   token:
     description: GitHub Token
@@ -10,7 +10,7 @@ inputs:
     required: true
   repoCommon:
     description: Common repository containing the SVG coverage charts
-    required: false
+    required: true
     default: 'common'
   version:
     description: Release version
@@ -18,11 +18,11 @@ inputs:
   changelog:
     description: Generated changelog content from Changelog Action
     required: true
-    default: ''
+    default: 
   summary:
     description: Summary to prepend to the changelog body
     required: false
-    default: ''
+    default: 
   coverageResultsPath:
     description: Path to the latest coverage results file
     required: true
